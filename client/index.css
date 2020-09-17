@@ -1,0 +1,72 @@
+/*Main div element*/
+#main{
+    position: relative;
+    top: 30vh;
+    left: 25vw;
+    max-width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+}
+/*User input element*/
+input{
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 10px;
+    left: 10vw;
+    font-size: 2vw;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+input:focus{
+    border: 2px solid white;
+}
+/*Convert button*/
+button{
+    display: block;
+    position: relative;
+    margin: 10px;
+    left: 18vw;
+    border-radius: 10px;
+    font-size: 2vw;
+    background-color: transparent;
+}
+button:hover{
+    color: white;
+    border: 2px solid white;
+}
+/*Instructions element*/
+#usage{
+    display: flex;
+    position: relative;
+    top: 30vh;
+    text-align: left;
+    overflow-y: hidden;
+}
+#left{
+    flex: 1;
+    position: relative;
+}
+#right{
+    flex: 1;
+    position: relative;
+}
+/*Output element*/
+#result{
+    position: relative;
+    right: 2vw;
+    padding: 10px;
+}#json{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+body{
+    background-color: blueviolet;
+}
+@media screen and (max-width:560px){
+    #json{
+        right: 1vw;
+    }
+}

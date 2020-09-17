@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Imperial Converter</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!----------------------MAIN CONVERSION----------------------------->
+    <div id="main">
+        <h1>Metric to Imperial Converter</h1>
+        <input placeholder="Ex:4km or 4 gal or 4.3 mi" id="userIn"/>
+        <button id="convert">Convert</button>
+        <p id="result"></p>
+        <p id="json"></p>
+    </div>
+    <!----------------------INSTRUCTIONS----------------------------->
+    <div id="usage">
+        <div id="left"><h2>Usage:</h2>
+        <p>Currently accepted units: gallons (gal), liters (l), kilograms (kg), pounds (lbs), miles (mi) and kilometers (km) <br />
+            <br />
+            Examples:<br />
+            /api/convert/input=4gal<br />
+            /api/convert/input=0.5km<br />
+            /api/convert/input=5.4lbs<br />
+            /api/convert/input=1.2kg</p></div>
+        <div id="right">
+            <h2>Return:</h2>
+            <p>{initNum: 3.1, initUnit: 'mi', returnNum: 5.0000008, returnUnit: 'km', string: '3.1 miles converts to 5.00002 kilometers'}</p>
+        </div>
+        
+    </div>
+    <!----------------------SCRIPTS----------------------------->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
